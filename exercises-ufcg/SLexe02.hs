@@ -1,10 +1,9 @@
 -- Faça uma função que leia três números e retorne o maior deles.
 maior :: Int -> Int -> Int -> Int
 maior a b c
-    | a > b && a > c = a
-    | b > a && b > c = b
-    | c > a && c > b = c
-    | otherwise = a
+    | a >= b && a >= c = a
+    | b >= a && b >= c = b
+    | c >= a && c >= b = c
 
 main :: IO()
 main = do
